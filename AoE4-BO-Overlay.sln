@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoE4-BO-Overlay", "AoE4-BO-Overlay\AoE4-BO-Overlay.csproj", "{CD737262-AB64-49C0-A02D-06C06F717F62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD737262-AB64-49C0-A02D-06C06F717F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD737262-AB64-49C0-A02D-06C06F717F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD737262-AB64-49C0-A02D-06C06F717F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD737262-AB64-49C0-A02D-06C06F717F62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4A8AA42-53CA-4227-B7D1-C117F72CDA39}
+	EndGlobalSection
+EndGlobal

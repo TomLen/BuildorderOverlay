@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "53KPH9wMm+XPKW67WvbquJZKr83FJ7u4naWSAD0yr2tjJuwAlZ5Kf0pR5mFt/mRbLrypn47Ty16bEjGjYneIVQ==",
+  "dgSpecHash": "RzDtzZVaUrhUNTJ8gKe41u+BkrjXDcdVkJVX4wEbGSs3Dc6/KhCDFNmYBcrpcg4+bsG+Jg7yDTunsLd0AmceXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomlen\\source\\repos\\AoE4-BO-Overlay\\AoE4-BO-Overlay\\AoE4-BO-Overlay.csproj",
+  "projectFilePath": "C:\\Users\\tomlen\\Documents\\GitHub\\BuildorderOverlay\\AoE4-BO-Overlay\\AoE4-BO-Overlay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomlen\\.nuget\\packages\\caliburn.micro\\4.0.173\\caliburn.micro.4.0.173.nupkg.sha512",
     "C:\\Users\\tomlen\\.nuget\\packages\\caliburn.micro.core\\4.0.173\\caliburn.micro.core.4.0.173.nupkg.sha512",

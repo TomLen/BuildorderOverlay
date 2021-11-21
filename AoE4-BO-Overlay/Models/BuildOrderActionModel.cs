@@ -9,7 +9,7 @@ namespace AoE4_BO_Overlay
     public class BuildOrderActionModel
     {
         private int index;
-        private int time;
+        private string time;
         private int supply;
         private string action; 
         
@@ -18,7 +18,7 @@ namespace AoE4_BO_Overlay
             get { return index; }
             set { index = value; }
         }
-        public int Time
+        public string Time
         {
             get { return time; }
             set { time = value; }
@@ -34,14 +34,13 @@ namespace AoE4_BO_Overlay
             set { action = value; }
         }
 
-        public BuildOrderActionModel(int index, int time, int supply, string action)
+        public BuildOrderActionModel(int index, string time, int supply, string action)
         {
+
             this.index = index;
             this.time = time;
             this.supply = supply;
             this.action = action;
         }
-
-
     }
 }

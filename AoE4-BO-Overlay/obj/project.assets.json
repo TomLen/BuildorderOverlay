@@ -3891,11 +3891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomlen\\source\\repos\\AoE4-BO-Overlay\\AoE4-BO-Overlay\\AoE4-BO-Overlay.csproj",
+      "projectUniqueName": "C:\\Users\\tomlen\\Documents\\GitHub\\BuildorderOverlay\\AoE4-BO-Overlay\\AoE4-BO-Overlay.csproj",
       "projectName": "AoE4-BO-Overlay",
-      "projectPath": "C:\\Users\\tomlen\\source\\repos\\AoE4-BO-Overlay\\AoE4-BO-Overlay\\AoE4-BO-Overlay.csproj",
+      "projectPath": "C:\\Users\\tomlen\\Documents\\GitHub\\BuildorderOverlay\\AoE4-BO-Overlay\\AoE4-BO-Overlay.csproj",
       "packagesPath": "C:\\Users\\tomlen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomlen\\source\\repos\\AoE4-BO-Overlay\\AoE4-BO-Overlay\\obj\\",
+      "outputPath": "C:\\Users\\tomlen\\Documents\\GitHub\\BuildorderOverlay\\AoE4-BO-Overlay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

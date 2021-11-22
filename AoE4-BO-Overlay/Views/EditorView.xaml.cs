@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AoE4_BO_Overlay.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,7 @@ namespace AoE4_BO_Overlay.Views
     {
         public EditorView()
         {
+            DataContext = new EditorViewModel();
             InitializeComponent();
         }
     }

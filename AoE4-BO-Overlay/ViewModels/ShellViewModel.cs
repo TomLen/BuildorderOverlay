@@ -22,7 +22,7 @@ namespace AoE4_BO_Overlay.ViewModels
         public void CreateBO_Click(object sender, RoutedEventArgs e)
         {
             EditorView createBO = new EditorView();
-            ActiveItem(new EditorViewModel());
+            ActivateItemAsync(new EditorViewModel());
             createBO.Show();
         }
     }

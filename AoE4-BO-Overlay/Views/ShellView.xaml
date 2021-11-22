@@ -8,7 +8,9 @@
         mc:Ignorable="d" FontSize="20"
         AllowsTransparency="True" WindowStyle="None" Topmost="True" 
         Title="ShellView" Height="200" Width="300" WindowStartupLocation="CenterScreen">
-
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White"/>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />

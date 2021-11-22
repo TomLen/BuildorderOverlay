@@ -8,7 +8,7 @@ namespace AoE4_BO_Overlay
 {
     public class BuildOrderActionModel
     {
-        private int index;
+        private int index = 0;
         private string time;
         private int supply;
         private string action; 
@@ -42,5 +42,6 @@ namespace AoE4_BO_Overlay
             this.supply = supply;
             this.action = action;
         }
+
     }
 }

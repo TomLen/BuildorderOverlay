@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\App.xaml
-1-1351704627
+2-597621980
 
-8780019894
+10-906689685
 2201233968397
-Views\ShellView.xaml;
+Views\EditorView.xaml;Views\ShellView.xaml;
 
 False
 

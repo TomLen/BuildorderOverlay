@@ -16,6 +16,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
         <ItemsControl ItemsSource="{Binding CurrendBuildOrder}" Grid.Row="1" Grid.Column="0">
@@ -23,9 +25,10 @@
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="80" />
-                            <ColumnDefinition Width="50" />
-                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition MinWidth="80" />
+                            <ColumnDefinition MinWidth="50" />
+                            <ColumnDefinition MinWidth="300" />
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
                         <Grid.RowDefinitions>
@@ -33,12 +36,17 @@
                             <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
 
-                        <TextBlock Text="{Binding Time, Mode=OneWay}" Grid.Column="0" Grid.Row="0" />
-                        <TextBlock Text="{Binding Supply, Mode=OneWay}" Grid.Column="1" Grid.Row="0"/>
-                        <TextBlock Text="{Binding Action, Mode=OneWay}" Grid.Column="2" Grid.Row="0"/>
+                        <TextBox Text="{Binding Time, Mode=TwoWay}" Grid.Column="0" Grid.Row="0" />
+                        <TextBox Text="{Binding Supply, Mode=TwoWay}" Grid.Column="1" Grid.Row="0"/>
+                        <TextBox Text="{Binding Action, Mode=TwoWay}" Grid.Column="2" Grid.Row="0"/>
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+            <TextBox Text="{Binding NewBuildOrderTime, Mode=TwoWay}" MinWidth="80"/>
+            <TextBox Text="{Binding NewBuildOrderSupply, Mode=TwoWay}" MinWidth="50"/>
+            <TextBox Text="{Binding NewBuildOrderAction, Mode=TwoWay}" MinWidth="300"/>
+        </StackPanel>
     </Grid>
 </Window>

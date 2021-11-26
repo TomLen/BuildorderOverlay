@@ -17,7 +17,7 @@ namespace AoE4_BO_Overlay.ViewModels
 
         public EditorViewModel()
         {
-            CurrendBuildOrder = new BindableCollection<BuildOrderActionModel>(JsonParser.GetBuildOrder().Actions);
+            CurrendBuildOrder = new BindableCollection<BuildOrderActionModel>(JsonParser.GetBuildOrder("generated.json").Actions);
         }
 
 

@@ -13,6 +13,7 @@ namespace AoE4_BO_Overlay
     {
         public Bootstrapper()
         {
+            JsonParser.CreateDirectory();
             Initialize(); 
         }
 

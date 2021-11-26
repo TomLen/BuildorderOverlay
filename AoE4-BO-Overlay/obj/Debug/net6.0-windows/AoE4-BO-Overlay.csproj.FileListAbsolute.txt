@@ -148,3 +148,5 @@ C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\obj\Debug\net
 C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\obj\Debug\net6.0-windows\AoE4-BO-Overlay.genruntimeconfig.cache
 C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\obj\Debug\net6.0-windows\Views\EditorView.g.cs
 C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\obj\Debug\net6.0-windows\Views\EditorView.baml
+C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\obj\Debug\net6.0-windows\Views\BuildOrderPickerView.g.cs
+C:\Users\tomlen\Documents\GitHub\BuildorderOverlay\AoE4-BO-Overlay\obj\Debug\net6.0-windows\Views\BuildOrderPickerView.baml

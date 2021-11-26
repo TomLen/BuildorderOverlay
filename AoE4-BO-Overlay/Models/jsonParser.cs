@@ -11,6 +11,10 @@ namespace AoE4_BO_Overlay
 {
     public static class JsonParser
     {
+        public static List<BuildOrderModel> BuildOrders;
+        static string BuildOrderFolder = "BuildOrders";
+        public static string dirPath = Directory.GetCurrentDirectory() + "\\" + BuildOrderFolder;
+        public static List<string> BuildOrderNames;
         private static string readJson(string file)
         {
             try
@@ -25,14 +29,26 @@ namespace AoE4_BO_Overlay
 
         private static List<BuildOrderActionModel> DeserelizeBuildOrder(string json)
         {
-            List<BuildOrderActionModel> buildOrderActions = JsonConvert.DeserializeObject<List<BuildOrderActionModel>>(json);
-            return buildOrderActions;
+            return JsonConvert.DeserializeObject<List<BuildOrderActionModel>>(json);
         }
 
-        public static BuildOrderModel GetBuildOrder()
+        public static BuildOrderModel GetBuildOrder(string BuildOrderFileName)
         {
-            var temp = DeserelizeBuildOrder(readJson(@"G:\BuilderOrder\generated.json"));
-            return new BuildOrderModel(temp);
+            return new BuildOrderModel(DeserelizeBuildOrder(readJson(dirPath + "\\" + BuildOrderFileName)));
+        }
+
+        public static void readBuildorderNames()
+        {
+            BuildOrderNames = Directory.GetFiles(dirPath).ToList();
+        }
+
+        public static void CreateDirectory()
+        {
+            if (BuildOrders != null)
+            {
+                BuildOrders.Clear();
+            };
+            Directory.CreateDirectory(dirPath);
         }
     }
 }

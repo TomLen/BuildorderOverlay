@@ -16,7 +16,8 @@ namespace AoE4_BO_Overlay.ViewModels
 
         public ShellViewModel()
         {
-            BuildOrder = new BindableCollection<BuildOrderActionModel>(JsonParser.GetBuildOrder().Actions);
+            JsonParser.readBuildorderNames();
+            BuildOrder = new BindableCollection<BuildOrderActionModel>(JsonParser.GetBuildOrder("generated.json").Actions);
         }
 
         public void CreateBO_Click(object sender, RoutedEventArgs e)
@@ -24,6 +25,11 @@ namespace AoE4_BO_Overlay.ViewModels
             EditorView createBO = new EditorView();
             ActivateItemAsync(new EditorViewModel());
             createBO.Show();
+        }
+
+        public void ShowBO_Click(object sender, RoutedEventArgs e)
+        {
+            JsonParser.readBuildorderNames();
         }
     }
 }

@@ -8,5 +8,7 @@
         Title="BuildOrderPickerView" Height="450" Width="800">
     <Grid>
         
+        <ComboBox ItemsSource="{Binding GetBOName, Mode=OneWay}"/>
     </Grid>
 </Window>
+

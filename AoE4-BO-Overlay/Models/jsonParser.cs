@@ -12,9 +12,11 @@ namespace AoE4_BO_Overlay
     public static class JsonParser
     {
         public static List<BuildOrderModel> BuildOrders;
-        static string BuildOrderFolder = "BuildOrders";
+        public static string BuildOrderFolder = "BuildOrders";
         public static string dirPath = Directory.GetCurrentDirectory() + "\\" + BuildOrderFolder;
-        public static List<string> BuildOrderNames;
+        public static BuildOrderModel CurrendBuildOrder;
+        private static int _idCounter = 0;
+
         private static string readJson(string file)
         {
             try
@@ -34,20 +36,16 @@ namespace AoE4_BO_Overlay
 
         public static BuildOrderModel GetBuildOrder(string BuildOrderFileName)
         {
-            return new BuildOrderModel(DeserelizeBuildOrder(readJson(dirPath + "\\" + BuildOrderFileName)));
+            var bo = new BuildOrderModel(DeserelizeBuildOrder(readJson(dirPath + "\\" + BuildOrderFileName)));
+            bo.Name = BuildOrderFileName;
+            bo.ID = _idCounter++;
+            return bo;
         }
 
-        public static void readBuildorderNames()
-        {
-            BuildOrderNames = Directory.GetFiles(dirPath).ToList();
-        }
+
 
         public static void CreateDirectory()
         {
-            if (BuildOrders != null)
-            {
-                BuildOrders.Clear();
-            };
             Directory.CreateDirectory(dirPath);
         }
     }

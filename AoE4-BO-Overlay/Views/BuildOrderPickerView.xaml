@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:AoE4_BO_Overlay.Views"
         mc:Ignorable="d"
         Title="BuildOrderPickerView" Height="450" Width="800">
-    <Grid>
-        
-        <ComboBox ItemsSource="{Binding GetBOName, Mode=OneWay}"/>
-    </Grid>
+    <ComboBox Name="BONames"
+            ItemsSource="{Binding Names}"
+            Text="Build Orders"
+            IsEditable="true"
+            IsReadOnly="true"/>
 </Window>
 

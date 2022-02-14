@@ -23,7 +23,6 @@ namespace AoE4_BO_Overlay.Views
         public EditorView()
         {
             DataContext = new EditorViewModel();
-            InitializeComponent();
         }
     }
 }

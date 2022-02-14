@@ -14,26 +14,28 @@ namespace AoE4_BO_Overlay.ViewModels
     internal class BuildOrderPickerViewModel : Conductor<object>
     {
         private BindableCollection<BuildOrderModel> _buildOrders = new BindableCollection<BuildOrderModel>(BuildOrderCollaction._buildOrders);
+        private BindableCollection<string> _names = new BindableCollection<string>();
+
         public BuildOrderPickerViewModel()
         {
             BuildOrderCollaction.UpdatebuildOrders();
 
         }
 
-        public List<string> GetBOName {
+        public BindableCollection<string> Names{
             get {
-                return OnlyBoNames();
+                return _names;
             }
         }
 
-        private List<string> OnlyBoNames()
+        private BindableCollection<string> BuildOrderNames()
         {
-            var names = new List<string>();
+            _names.Clear();
             foreach (var name in _buildOrders)
             {
-                names.Add(name.Name);
+                _names.Add(name.Name);
             }
-            return names;
+            return _names;
         }
     }
 }
